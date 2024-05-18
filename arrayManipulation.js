@@ -11,3 +11,19 @@ function processArray(arr) {
     });
   }
   
+
+
+  // Function to format array of strings based on processed numbers
+  function formatArrayStrings(stringsArr, numbersArr) {
+    return stringsArr.map((str, index) => {
+      const num = numbersArr[index];
+      if (num % 2 === 0) {
+        // Capitalize string if the number is even
+        return str.toUpperCase();
+      } else {
+        // Convert string to lowercase if the number is odd
+        return str.toLowerCase();
+      }
+    });
+  }
+  
