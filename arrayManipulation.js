@@ -27,3 +27,10 @@ function processArray(arr) {
     });
   }
   
+
+
+  module.exports = {
+    processArray,
+    formatArrayStrings
+  };
+  
